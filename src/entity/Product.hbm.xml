@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 6, 2018 8:40:27 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="entity.Product" table="SanPham">
+        <id name="masp" length="50" type="java.lang.String">
+            <column name="MaSanPham" />
+            <generator class="assigned" />
+        </id>
+        <property name="maloai" length="50" type="java.lang.String">
+            <column name="MaLoai" />
+        </property>
+        <property name="tensp" length="50" type="java.lang.String">
+            <column name="TenSanPham" />
+        </property>
+        <property name="img" length="200" type="java.lang.String">
+            <column name="Anh" />
+        </property>
+        <property name="gia" type="int">
+            <column name="DonGia" />
+        </property>
+        <property name="soluong" type="int">
+            <column name="SoLuong" />
+        </property>
+        <property name="chitiet" length="1000" type="java.lang.String">
+            <column name="ChiTiet" />
+        </property>
+        <property name="ghichu" length="50" type="java.lang.String">
+            <column name="GhiChu" />
+        </property>
+    </class>
+</hibernate-mapping>
